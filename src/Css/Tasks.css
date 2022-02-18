@@ -1,0 +1,60 @@
+:root{
+    --menu-width:200px;
+    /* --border-color:#f9f9f9; */
+    --menu-back:#fefefe;
+    --icon-back:#f2f2f2;
+}
+.tasks-section{
+    display: flex;
+    width:100%;
+}
+.tasks-section > div:nth-child(1){
+    width:var(--menu-width);
+    position: fixed;
+    height: 100%;
+    background-color: var(--menu-back) ;
+    padding-top:50px;
+    /* border-right: 2px solid var(--border-color); */
+}
+.tasks-section > div:nth-child(2){
+    width: calc(100% - var(--menu-width));;
+    float: right;
+}
+
+.tasks-section > div:nth-child(1) > .icon-btn{
+    position: absolute;
+    right:-15px;
+    top:100px;
+    border-radius: 50%;
+    /* width:30px; */
+    height:30px;
+    background-color: var(--form-back-color);
+    cursor:pointer;
+    text-align: center;
+}
+.icon-btn::before{
+    position: relative;
+    top:-5px;
+}
+.left-icon{
+    font-size:20px !important;
+}
+
+.menu-list{
+    list-style-type: none;
+    padding:0;
+    margin-top:8px;
+}
+.menu-list > li{
+    padding:10px 0;
+    padding-left:10px;
+}
+.menu-list > li:hover{
+    background-color: #f2f2f2;
+}
+.menu-list > li i{
+    margin-right:10px;
+}
+.active-task{
+    background-color: #f2f2f2;
+}

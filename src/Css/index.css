@@ -1,0 +1,13 @@
+:root{
+    --white-color:#fff;
+    --dark-back:#070431;
+    --btn-back-color:#002db3;
+    --dash-box-shadow:1px 1px 5px #d0d0d0,1px 1px 4px rgba(33, 39, 33, 0.267);
+    --form-back-color:#f9f9f9;
+}
+body{
+    overflow-x: hidden !important;
+}
+
+
+

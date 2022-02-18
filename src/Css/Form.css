@@ -1,0 +1,35 @@
+.form-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:10px 0;
+    gap:20px;
+    box-shadow: var(--dash-box-shadow);
+    background-color: var(--form-back-color);
+    position: fixed;
+    width:100%;
+    z-index: 1;
+}
+.form-div > button{
+    align-self: flex-end;
+    margin-right: 80px;
+    background-color: var(--btn-back-color);
+    color:var(--white-color);
+    border:none;
+    width:180px;
+    font-size: 18px;
+    text-align: center;
+    padding:8px 0;
+}
+
+.form-div > form{
+    width:max(80%, 320px ,0.75vw);
+    padding:10px;
+}
+
+.form-div > form input:not([type="checkbox"]){
+    width:max(80%, 320px ,0.55vw);
+    padding:10px 5px;
+    border-radius: 5px;
+}

@@ -1,0 +1,8 @@
+:root{
+    --icon-color:#002db3;
+}
+.icon{
+    display: inline-block;
+    font-size: 30px;
+    color:var(--icon-color)
+}
