@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Css/mini.css';
+import './css/mini.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { QueryClient,QueryClientProvider, } from '@tanstack/react-query';
+// import {ReactQueryDevtools} from 'react-query/devtools'
+
+
+const queryClient = new QueryClient();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <QueryClientProvider client={queryClient}>
+      <App/>
+      {/* <ReactQueryDevtools initialIsOpen /> */}
+    </QueryClientProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,10 +1,8 @@
 import React from 'react';
 import { Routes,Route, Link, useLocation } from 'react-router-dom';
-import Icon from './Icon';
+import {Icon,AllTask} from '.';
+import '../css/Tasks.css';
 
-
-import '../Css/Tasks.css';
-import AllTask from './AllTask';
 
 const Tasks = () => {
   const  menus = ["All Tasks","Tasks Today","Income Tasks","Completed Tasks","Task Analysis"];

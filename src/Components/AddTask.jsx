@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
-import Button from './Button';
-import Form from './Form';
+import {Form,Button} from '.';
 
 const AddTask = () => {
   const [showForm, setShowForm] = useState(false);

@@ -1,6 +1,6 @@
 import React from 'react'
-import '../Css/icons/bootstrap-icons.css';
-import '../Css/icons.css';
+import '../css/icons/bootstrap-icons.css';
+import '../css/icons.css';
 
 
 const Icon = ({name}) => {

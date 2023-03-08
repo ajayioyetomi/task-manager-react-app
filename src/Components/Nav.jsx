@@ -1,6 +1,7 @@
-import Logo from '../Images/logo.png';
-import '../Css/Nav.css';
+import Logo from '../images/logo.png';
+import '../css/Nav.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const alt = "alt";
@@ -11,17 +12,14 @@ const Nav = ()=>{
             <nav className="nav">
                 <div>
                     <span></span>
-                    <a href="/"><img src={Logo} alt={alt}/>
+                    <Link to="/"><img src={Logo} alt={alt}/>
                         <span className='task-manager'>TASK-MANAGER</span>
-                    </a>
+                    </Link>
                 </div>
                 <div>
                     <ul className="nav-list">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">Features</a></li>
-                        <li><a href="/">About</a></li>
-                        <li className="floatR"><a href="/">Log in</a></li>
-                        <li className="floatR"><a href="/">Sign Up</a></li>
+                        <li className="floatR"><Link to="/login">Log in</Link></li>
+                        <li className="floatR"><Link to="/sign-up">Sign Up</Link></li>
                     </ul>
 
                 </div>

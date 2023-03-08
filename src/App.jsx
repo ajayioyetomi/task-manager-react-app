@@ -1,24 +1,38 @@
-import React from 'react';
-import Nav from './Components/Nav';
-import Dashboard from './Components/Dashboard';
-import Home from './Components/Home';
+import React,{useState} from 'react';
+import Nav from './components/Nav';
+import {Home,Dashboard,SignUp,Login} from './views';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import './Css/index.css';
+import './css/index.css';
+import { ThemeProvider } from 'styled-components';
+import { AppContextProvider } from './context';
+
+const theme = {
+    lightBg: "#fff",
+    darkBg:"rgb(40 44 52)",
+    lightCr:"#222",
+    darkCr:"#aaa"
+}
+
+
 
 function App2() {
-  return (
-      <React.Fragment>
-        <Nav/>
-        <BrowserRouter>
-          <Routes>
-            <Route index element={<Home/>}></Route>
-            <Route path="/dashboard/*" element={<Dashboard/>}></Route>
 
-           
-          </Routes>
-        </BrowserRouter>
-       
-      </React.Fragment>
+  return (
+      <AppContextProvider>
+        <ThemeProvider theme={theme}>
+          <BrowserRouter>
+            <Nav/>
+            <Routes>
+              <Route index element={<Home/>}></Route>
+              <Route path="/dashboard/*" element={<Dashboard/>}/>
+              <Route path="/login" element={<Login/>}/>
+              <Route path="/sign-up" element={<SignUp/>}/>
+            </Routes>
+          </BrowserRouter>
+        </ThemeProvider>
+      </AppContextProvider>
+      
+      
     );
 }
 

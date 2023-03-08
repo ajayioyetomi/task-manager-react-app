@@ -1,7 +1,6 @@
 import React, {useState}from 'react';
-import Input from './Input';
-import Label from './Label';
-import '../Css/Form.css';
+import {Input,Label} from '.';
+import '../css/Form.css';
 
 const Form = ({showForm}) => {
   const [inputVals,setInputVals] = useState({});

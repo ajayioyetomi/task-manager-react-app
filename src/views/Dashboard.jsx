@@ -1,6 +1,5 @@
-import React ,{useState}from 'react';
-import Tasks from './Tasks';
-import AddTask from './AddTask';
+import React from 'react';
+import {AddTask,Tasks} from '../components';
 
 const Dashboard = () => {
   return (
