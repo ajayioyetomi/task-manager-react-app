@@ -1,33 +1,32 @@
 {
-    "login":
-    [{
-        "id":1,
-        "username":"admin123@gmail.com",
-        "password":"@amdmin12345",
-        "userId":1
-    }],
-    "tasks":[
-        {
-            "userId":1,
-            "id":1,
-            "name":"Read a Javascript book",
-            "completed":"false",
-            "dateCreated":"2023-02-04 15:23",
-            "datedEnded":"2023-04-04 15:23",
-            "reminder":"5:00",
-            "dateStarted":"2023-02-04 15:23"
-        },
-        {
-            "userId":1,
-            "id":2,
-            "name":"Read a Node book",
-            "completed":"false",
-            "dateCreated":"2023-02-04 15:23",
-            "datedEnded":"2023-04-04 15:23",
-            "reminder":"5:00",
-            "dateStarted":"2023-02-04 15:23"
-        }
-
-    ]
-    
+  "login": [
+    {
+      "id": 1,
+      "username": "admin123@gmail.com",
+      "password": "@amdmin12345",
+      "userId": 1
+    }
+  ],
+  "tasks": [
+    {
+      "userId": 1,
+      "id": 1,
+      "name": "Read a Javascript book",
+      "completed": "false",
+      "dateCreated": "2023-02-04 15:23",
+      "datedEnded": "2023-04-04 15:23",
+      "reminder": "5:00",
+      "dateStarted": "2023-02-04 15:23"
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "name": "Read a Node book",
+      "completed": "false",
+      "dateCreated": "2023-02-04 15:23",
+      "datedEnded": "2023-04-04 15:23",
+      "reminder": "5:00",
+      "dateStarted": "2023-02-04 15:23"
+    }
+  ]
 }
